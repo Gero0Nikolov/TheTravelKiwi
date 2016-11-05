@@ -102,6 +102,12 @@ add_action( 'widgets_init', 'the_travel_kiwi_widgets_init' );
  * Enqueue scripts and styles.
  */
 function the_travel_kiwi_scripts() {
+	wp_enqueue_style( 'the_travel_kiwi-fonts', get_template_directory_uri() . '/fonts.css' );
+	wp_enqueue_style( 'the_travel_kiwi-animations', get_template_directory_uri() . '/animate.css' );
+	wp_enqueue_style( 'the_travel_kiwi-font-awesome', get_template_directory_uri() . '/inc/font-awesome/css/font-awesome.css' );
+
+	wp_enqueue_script( 'the_travel_kiwi-initial', get_template_directory_uri() . '/js/initial.js', array( 'jquery' ), '', false );
+	
 	wp_enqueue_style( 'the_travel_kiwi-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'the_travel_kiwi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

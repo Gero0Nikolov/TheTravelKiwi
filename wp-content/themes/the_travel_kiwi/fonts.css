@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+@font-face {
+	font-family: OpenSansLight;
+	src: url('assets/fonts/OpenSans-Light.ttf');
+}
+@font-face {
+	font-family: OpenSansRegular;
+	src: url('assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: OpenSansBold;
+	src: url('assets/fonts/OpenSans-Bold.ttf');
+}
