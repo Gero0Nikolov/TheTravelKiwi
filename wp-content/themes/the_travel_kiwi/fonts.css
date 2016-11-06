@@ -12,3 +12,16 @@
 	font-family: OpenSansBold;
 	src: url('assets/fonts/OpenSans-Bold.ttf');
 }
+
+@font-face {
+	font-family: LoraRegular;
+	src: url('assets/fonts/Lora-Regular.ttf');
+}
+@font-face {
+	font-family: LoraItalic;
+	src: url('assets/fonts/Lora-Italic.ttf');
+}
+@font-face {
+	font-family: LoraBold;
+	src: url('assets/fonts/Lora-Bold.ttf');
+}

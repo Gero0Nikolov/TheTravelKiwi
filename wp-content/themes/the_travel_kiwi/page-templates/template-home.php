@@ -45,4 +45,48 @@ if ( have_rows( "video" ) ) {
 }
 ?>
 
+<?php
+$page_content = get_field( "page_content" );
+if ( !empty( $page_content ) ) {
+	?>
+
+	<div id="page-content" class="page-text">
+		<?php echo $page_content; ?>
+	</div>
+
+	<?php
+}
+?>
+
+<?php
+if ( have_rows( "featured_places" ) ) {
+	?>
+	<div class="places-holder">
+	<?php
+	$panel_id = 1;
+	while ( have_rows( "featured_places" ) ) {
+		the_row();
+		$country_name = get_sub_field( "country_name" );
+		$city_name = get_sub_field( "city_name" );
+		$city_nick = get_sub_field( "city_nick" );
+		$city_photo = get_sub_field( "city_photo" );
+		?>
+
+		<a href="#" class="place-anchor">
+			<div class="place-container" style="background-image: url(<?php echo $city_photo; ?>);">
+				<h3 class="country-name"><?php echo $country_name; ?></h3>
+				<h1 class="city-name"><?php echo $city_name; ?></h1>
+				<h2 class="city-nick"><?php echo $city_nick; ?></h2>
+			</div>
+		</a>
+
+		<?php
+		$video_id += 1;
+	}
+	?>
+	</div>
+	<?php
+}
+?>
+
 <?php get_footer(); ?>
