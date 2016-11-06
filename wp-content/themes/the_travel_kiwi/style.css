@@ -885,7 +885,8 @@ object {
 .video-slider-homepage {
   display: block;
   width: 100%;
-  padding: 0 10%; }
+  padding: 0 15%;
+  margin-top: 4em; }
   .video-slider-homepage .play-button {
     display: inline-block;
     position: absolute;
@@ -938,19 +939,38 @@ object {
       transform: translate(-40%, -50%);
       max-width: 50%; }
   .video-slider-homepage .owl-prev {
-    left: 10%; }
+    left: 15%; }
   .video-slider-homepage .owl-next {
-    right: 10%; }
+    right: 15%; }
   .video-slider-homepage .owl-prev:hover,
   .video-slider-homepage .owl-next:hover {
     background: rgba(255, 255, 255, 0.85); }
+  .video-slider-homepage .owl-dots {
+    text-align: center; }
+  .video-slider-homepage .owl-dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #eee;
+    border-radius: 100%;
+    margin: 0.5em;
+    webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+  .video-slider-homepage .owl-dot.active {
+    background: #e67e22; }
+  .video-slider-homepage .owl-dot.active:hover {
+    background: #f39c12; }
+  .video-slider-homepage .owl-dot:hover {
+    background: #e67e22; }
 
 .video-slider-homepage:hover .owl-nav {
   opacity: 1; }
 
 .page-text {
   display: block;
-  padding: 0 10%;
+  padding: 0 15%;
   margin: 2em 0 4em; }
   .page-text h1,
   .page-text h2,
@@ -986,7 +1006,7 @@ object {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 10%;
   margin: 2em 0 1em; }
   .places-holder .place-anchor {
     display: inline-block;
@@ -1132,7 +1152,22 @@ object {
         color: #e67e22; }
 
 .site-content.mobile {
-  padding: 0 2em; }
+  padding: 0; }
+  .site-content.mobile .video-slider-homepage {
+    margin-top: 0 !important;
+    padding: 0 !important; }
+  .site-content.mobile .owl-nav {
+    display: none !important; }
+  .site-content.mobile .page-text {
+    padding: 0 2em !important; }
+  .site-content.mobile .places-holder {
+    display: block;
+    padding: 0 1em !important; }
+    .site-content.mobile .places-holder .place-anchor {
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 1em 0; }
 
 .site-footer.mobile {
   display: block !important; }

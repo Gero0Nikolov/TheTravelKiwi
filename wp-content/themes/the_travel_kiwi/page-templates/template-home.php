@@ -70,9 +70,10 @@ if ( have_rows( "featured_places" ) ) {
 		$city_name = get_sub_field( "city_name" );
 		$city_nick = get_sub_field( "city_nick" );
 		$city_photo = get_sub_field( "city_photo" );
+		$post_link = get_sub_field( "post_link" );
 		?>
 
-		<a href="#" class="place-anchor">
+		<a href="<?php echo $post_link; ?>" class="place-anchor">
 			<div class="place-container" style="background-image: url(<?php echo $city_photo; ?>);">
 				<h3 class="country-name"><?php echo $country_name; ?></h3>
 				<h1 class="city-name"><?php echo $city_name; ?></h1>

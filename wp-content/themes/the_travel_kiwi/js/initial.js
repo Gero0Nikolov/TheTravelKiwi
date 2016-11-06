@@ -4,10 +4,8 @@ jQuery( document ).ready(function(){
 	jQuery( "#menu-controller" ).on("click", function() { openCloseMobileMenu( "#mobile-menu-holder" ) });
 
 	jQuery(".owl-carousel").owlCarousel({		
-		margin: 10,
 		loop: true,
 		items: 1,
-		stagePadding: 120,
 		nav: true,
 		center: true,
 		navText: [prevIcon, nextIcon]

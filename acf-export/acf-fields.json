@@ -182,6 +182,26 @@
                         "min_size": "",
                         "max_size": "",
                         "mime_types": "png, jpg, giff, webp, tiff"
+                    },
+                    {
+                        "key": "field_581f504c671e4",
+                        "label": "Post link",
+                        "name": "post_link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "post"
+                        ],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0
                     }
                 ]
             }
