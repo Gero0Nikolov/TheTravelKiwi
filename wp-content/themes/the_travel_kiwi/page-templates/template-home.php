@@ -23,7 +23,6 @@ if ( have_rows( "video" ) ) {
 		the_row();
 		$video_src = get_sub_field( "video_source" );
 		$video_type = end( explode( ".", $video_src ) );
-		$video_title = get_sub_field( "video_title" );	
 		?>
 
 		<div>

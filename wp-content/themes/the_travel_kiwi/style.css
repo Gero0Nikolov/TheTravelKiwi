@@ -1120,7 +1120,8 @@ object {
   text-align: left;
   z-index: 999;
   transform: translateY(-200%);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-overflow-scrolling: touch; }
   #mobile-menu-holder .menu {
     display: block;
     margin: 0;
