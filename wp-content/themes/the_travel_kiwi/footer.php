@@ -9,11 +9,13 @@
  * @package The_Travel_Kiwi
  */
 
+$mobile_class= "";
+if ( wp_is_mobile() ) { $mobile_class = "mobile"; }
 ?>
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer <?php echo $mobile_class; ?>" role="contentinfo">
 		<div class="left-container-50p">
 			<a href="<?php echo get_site_url(); ?>" class="site-logo-link hvr-wobble-horizontal">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_subtitled.png" title="The Travel Kiwi" alt="The Travel Kiwi Logo Subtitled" class="site-logo" />

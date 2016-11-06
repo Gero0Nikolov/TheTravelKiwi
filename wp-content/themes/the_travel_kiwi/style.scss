@@ -935,6 +935,7 @@ $asbestos: #7f8c8d;
 	left: 0;
 	width: 100%;
 	transform: translateZ(0);
+	z-index: 9999;
 
 	.site-logo-link {
 		text-decoration: none !important;
@@ -1020,7 +1021,7 @@ $asbestos: #7f8c8d;
 		-o-transition: all 0.25s ease-in-out;
 		transition: all 0.25s ease-in-out;   
     }
-    .footer-link:hover { background: $peter_river; }
+    .footer-link:hover { background: $carrot; }
 
     .left-container-50p { width: 30% !important; }
 	.right-container-50p { width: 70% !important; }
@@ -1060,8 +1061,132 @@ $asbestos: #7f8c8d;
 
 .site-content {
 	display: block;
-    margin: 3em 0;
+    margin: calc(2em + 48px) 0;
     padding: 0 15%;
+}
+
+/* MOBILE STYLES */
+.main-navigation.mobile { 
+	padding: 1em 2em !important;
+	
+	#menu-controller {
+	    display: inline-block;
+	    vertical-align: middle;
+	    background: #fff;
+	    box-shadow: none;
+	    padding: 0.5em;
+	    font-weight: normal;
+	    font-size: 1.25rem;
+	    margin: 0 0.5em;
+        border-radius: 100%;
+	    width: 48px;
+	    height: 48px;
+	    text-align: center;
+	    outline: 0 !important;
+
+	    webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;  
+	}
+	#menu-controller:active,
+	#menu-controller:hover {
+		background: #eee;
+	}
+
+	#login-form-controller {
+	    display: inline-block;
+	    vertical-align: middle;
+	    background: $emerald;
+	    box-shadow: none;
+	    padding: 0.5em;
+	    font-weight: normal;
+	    font-size: 1.25rem;
+	    margin: 0 0;
+	    text-shadow: none;
+	    color: #fff;
+	    border: 0;
+	    border-radius: 100%;
+	    width: 48px;
+	    height: 48px;
+	    text-align: center;
+	    outline: 0 !important;
+
+	    webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;  
+	}
+	#login-form-controller:active,
+	#login-form-controller:hover {
+		background: $nephritis;
+	}
+}
+
+#mobile-menu-holder {
+    display: block;
+    position: fixed;
+    top: calc(2em + 48px);
+    width: 100%;
+    height: calc(100% - 2em - 48px);
+    background: #fff;
+    padding: 1em 2em;
+    text-align: left;
+    z-index: 999;
+    transform: translateY(-200%);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+
+    .menu {
+	    display: block;
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+
+	    .menu-item {
+	    	display: block;
+	    	text-align: left;
+
+	    	a {
+    		    font-family: OpenSansBold;
+			    font-size: 1.15rem;
+			    font-weight: normal;
+			    text-shadow: none;
+			    display: block;
+			    padding: 0.5em 00.25em;
+			    color: #333;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    vertical-align: middle;
+			    text-decoration: none;
+			    border-bottom: 3px solid #ddd;
+
+			    webkit-transition: all 0.25s ease-in-out;
+			    -moz-transition: all 0.25s ease-in-out;
+			    -o-transition: all 0.25s ease-in-out;
+			    transition: all 0.25s ease-in-out;  
+	    	}
+	    	a:active,
+	    	a:hover { border-color: $carrot; color: $carrot; }
+	    }
+    }
+}
+
+.site-content.mobile { padding: 0 2em; }
+
+.site-footer.mobile {
+	display: block !important;
+
+	.site-logo { width: 140px; }
+	
+	.footer-link { display: block; }
+	.footer-link:first-of-type { margin-top: 1em; }
+
+	.left-container-50p,
+	.right-container-50p {
+		display: block !important;
+		width: 100% !important;
+		text-align: center;
+	}
 }
 
 
