@@ -1087,7 +1087,7 @@ $asbestos: #7f8c8d;
 	.video-container {
 	    display: block;
 	    min-width: 100%;
-	    min-height: 2em;
+	    height: 2em !important;
 	    font-size: 12rem;
 	    background: #000;
 	    width: auto;
