@@ -19,6 +19,11 @@ if ( wp_is_mobile() ) { $mobile_class = "mobile"; }
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
+<script>
+	var prevIcon = "<img src='<?php echo get_template_directory_uri(); ?>/assets/images/larr.png' />";
+	var nextIcon = "<img src='<?php echo get_template_directory_uri(); ?>/assets/images/rarr.png' />";
+</script>
+
 <?php wp_head(); ?>
 </head>
 
